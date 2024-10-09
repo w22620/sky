@@ -1,0 +1,3176 @@
+[
+    {
+        "id": "d9e1a12b3da58dd5",
+        "type": "tab",
+        "label": "流程 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "eec05aa1276fe754",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-custom",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#2574f4",
+                "baseFont": "Arial,Arial,Helvetica,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#184d86",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#1665e3",
+                "baseFont": "Arial,Arial,Helvetica,sans-serif",
+                "reset": false
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#4B7930",
+                    "value": "#1665e3",
+                    "edited": true
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#385bcc",
+                    "edited": true
+                },
+                "page-backgroundColor": {
+                    "value": "#74a2ec",
+                    "edited": true
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#385bcc",
+                    "edited": true
+                },
+                "group-textColor": {
+                    "value": "#eeeeee",
+                    "edited": true
+                },
+                "group-borderColor": {
+                    "value": "#74a2ec",
+                    "edited": true
+                },
+                "group-backgroundColor": {
+                    "value": "#74a2ec",
+                    "edited": true
+                },
+                "widget-textColor": {
+                    "value": "#fef6f6",
+                    "edited": true
+                },
+                "widget-backgroundColor": {
+                    "value": "#eceff4",
+                    "edited": true
+                },
+                "widget-borderColor": {
+                    "value": "#74a2ec",
+                    "edited": true
+                },
+                "base-font": {
+                    "value": "Arial,Arial,Helvetica,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "e69f8a5b704de773",
+        "type": "s7 endpoint",
+        "transport": "iso-on-tcp",
+        "address": "192.168.40.10",
+        "port": "102",
+        "rack": "0",
+        "slot": "1",
+        "localtsaphi": "01",
+        "localtsaplo": "00",
+        "remotetsaphi": "01",
+        "remotetsaplo": "00",
+        "connmode": "rack-slot",
+        "adapter": "",
+        "busaddr": "2",
+        "cycletime": "1000",
+        "timeout": "2000",
+        "name": "1500",
+        "vartable": [
+            {
+                "addr": "DB2,INT1030",
+                "name": "底盒颜色选择"
+            },
+            {
+                "addr": "DB2,INT1032",
+                "name": "书签颜色选择"
+            },
+            {
+                "addr": "DB2,INT1034",
+                "name": "盒盖颜色选择"
+            },
+            {
+                "addr": "DB2,INT1036",
+                "name": "CW"
+            },
+            {
+                "addr": "M10.0",
+                "name": "下单"
+            },
+            {
+                "addr": "DB8,INT0",
+                "name": "已使用料盒"
+            },
+            {
+                "addr": "DB8,INT2",
+                "name": "左仓料芯"
+            },
+            {
+                "addr": "DB8,INT4",
+                "name": "右仓料芯"
+            },
+            {
+                "addr": "DB8,INT6",
+                "name": "盒盖当前数量"
+            },
+            {
+                "addr": "DB8,INT8",
+                "name": "合格件当前数量"
+            },
+            {
+                "addr": "DB1,REAL4",
+                "name": "当前电流"
+            },
+            {
+                "addr": "DB1,REAL0",
+                "name": "当前电压"
+            },
+            {
+                "addr": "DB1,REAL32",
+                "name": "温度值"
+            },
+            {
+                "addr": "DB1,REAL36",
+                "name": "湿度值"
+            },
+            {
+                "addr": "DB2,INT1038",
+                "name": "大黄钢珠"
+            },
+            {
+                "addr": "DB2,INT1040",
+                "name": "小黄钢珠"
+            },
+            {
+                "addr": "DB2,INT1042",
+                "name": "大绿钢珠"
+            },
+            {
+                "addr": "DB2,INT1044",
+                "name": "小绿钢珠"
+            },
+            {
+                "addr": "DB2,INT1046",
+                "name": "当前订单进度"
+            },
+            {
+                "addr": "DB2,INT1048",
+                "name": "CO2"
+            },
+            {
+                "addr": "DB2,INT1050",
+                "name": "大气压力"
+            },
+            {
+                "addr": "DB2,INT1052",
+                "name": "噪声"
+            },
+            {
+                "addr": "DB2,INT1052",
+                "name": "订单进度为100"
+            }
+        ]
+    },
+    {
+        "id": "5e4b61e1e364d7b4",
+        "type": "ui_tab",
+        "name": "登录界面",
+        "icon": "dashboard",
+        "order": 2,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "e14fdb3dea8c1a6c",
+        "type": "ui_tab",
+        "name": "订单操作界面",
+        "icon": "dashboard",
+        "order": 4,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "66376091d99c2303",
+        "type": "ui_tab",
+        "name": "数据监控界面",
+        "icon": "dashboard",
+        "order": 3,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "47527e9fc026a8d5",
+        "type": "ui_group",
+        "name": "",
+        "tab": "5e4b61e1e364d7b4",
+        "order": 1,
+        "disp": true,
+        "width": 30,
+        "collapse": false
+    },
+    {
+        "id": "e6796758cf5ea77c",
+        "type": "ui_group",
+        "name": "",
+        "tab": "e14fdb3dea8c1a6c",
+        "order": 1,
+        "disp": true,
+        "width": 22,
+        "collapse": false
+    },
+    {
+        "id": "42c5fec8c1d6f527",
+        "type": "ui_group",
+        "name": "",
+        "tab": "66376091d99c2303",
+        "order": 1,
+        "disp": true,
+        "width": 15,
+        "collapse": false
+    },
+    {
+        "id": "3477c481c8bb1867",
+        "type": "ui_tab",
+        "name": "主界面",
+        "icon": "dashboard",
+        "order": 1,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "9d3fc6899a3c3396",
+        "type": "ui_group",
+        "name": "请选择你的身份",
+        "tab": "3477c481c8bb1867",
+        "order": 1,
+        "disp": true,
+        "width": 28,
+        "collapse": false
+    },
+    {
+        "id": "0a6d2c0e1d3ecb85",
+        "type": "ui_spacer",
+        "z": "d9e1a12b3da58dd5",
+        "name": "spacer",
+        "group": "47527e9fc026a8d5",
+        "order": 1,
+        "width": 30,
+        "height": 1
+    },
+    {
+        "id": "d94303055f931e4d",
+        "type": "ui_spacer",
+        "z": "d9e1a12b3da58dd5",
+        "name": "spacer",
+        "group": "47527e9fc026a8d5",
+        "order": 2,
+        "width": 9,
+        "height": 1
+    },
+    {
+        "id": "7b7c55883f7de66f",
+        "type": "ui_spacer",
+        "z": "d9e1a12b3da58dd5",
+        "name": "spacer",
+        "group": "47527e9fc026a8d5",
+        "order": 4,
+        "width": 11,
+        "height": 1
+    },
+    {
+        "id": "bf7e66bd98cbb075",
+        "type": "ui_spacer",
+        "z": "d9e1a12b3da58dd5",
+        "name": "spacer",
+        "group": "47527e9fc026a8d5",
+        "order": 5,
+        "width": 9,
+        "height": 1
+    },
+    {
+        "id": "6b998ee559e77ad4",
+        "type": "ui_spacer",
+        "z": "d9e1a12b3da58dd5",
+        "name": "spacer",
+        "group": "47527e9fc026a8d5",
+        "order": 6,
+        "width": 11,
+        "height": 1
+    },
+    {
+        "id": "d32249b0760cba14",
+        "type": "ui_spacer",
+        "z": "d9e1a12b3da58dd5",
+        "name": "spacer",
+        "group": "47527e9fc026a8d5",
+        "order": 7,
+        "width": 9,
+        "height": 1
+    },
+    {
+        "id": "dd39f2373e308892",
+        "type": "ui_spacer",
+        "z": "d9e1a12b3da58dd5",
+        "name": "spacer",
+        "group": "47527e9fc026a8d5",
+        "order": 9,
+        "width": 11,
+        "height": 1
+    },
+    {
+        "id": "b3c8c4e598a7cbad",
+        "type": "ui_spacer",
+        "z": "d9e1a12b3da58dd5",
+        "name": "spacer",
+        "group": "47527e9fc026a8d5",
+        "order": 10,
+        "width": 9,
+        "height": 1
+    },
+    {
+        "id": "9c968847d6f05bdd",
+        "type": "ui_spacer",
+        "z": "d9e1a12b3da58dd5",
+        "name": "spacer",
+        "group": "47527e9fc026a8d5",
+        "order": 11,
+        "width": 11,
+        "height": 1
+    },
+    {
+        "id": "0c4d7b0c8167da5b",
+        "type": "ui_spacer",
+        "z": "d9e1a12b3da58dd5",
+        "name": "spacer",
+        "group": "47527e9fc026a8d5",
+        "order": 12,
+        "width": 9,
+        "height": 1
+    },
+    {
+        "id": "cf0b44c04324958c",
+        "type": "ui_spacer",
+        "z": "d9e1a12b3da58dd5",
+        "name": "spacer",
+        "group": "47527e9fc026a8d5",
+        "order": 14,
+        "width": 11,
+        "height": 1
+    },
+    {
+        "id": "69c38a77777d3bbe",
+        "type": "ui_spacer",
+        "z": "d9e1a12b3da58dd5",
+        "name": "spacer",
+        "group": "47527e9fc026a8d5",
+        "order": 15,
+        "width": 9,
+        "height": 1
+    },
+    {
+        "id": "18b18bc2a9ae8bfd",
+        "type": "ui_spacer",
+        "z": "d9e1a12b3da58dd5",
+        "name": "spacer",
+        "group": "47527e9fc026a8d5",
+        "order": 16,
+        "width": 11,
+        "height": 1
+    },
+    {
+        "id": "1146079adb5f99e0",
+        "type": "ui_spacer",
+        "z": "d9e1a12b3da58dd5",
+        "name": "spacer",
+        "group": "47527e9fc026a8d5",
+        "order": 17,
+        "width": 30,
+        "height": 1
+    },
+    {
+        "id": "0d555ccabc123a3e",
+        "type": "ui_spacer",
+        "z": "d9e1a12b3da58dd5",
+        "name": "spacer",
+        "group": "47527e9fc026a8d5",
+        "order": 18,
+        "width": 9,
+        "height": 1
+    },
+    {
+        "id": "22d1d2c0cfa00b23",
+        "type": "ui_spacer",
+        "z": "d9e1a12b3da58dd5",
+        "name": "spacer",
+        "group": "47527e9fc026a8d5",
+        "order": 20,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "0a50600ce2871a12",
+        "type": "ui_spacer",
+        "z": "d9e1a12b3da58dd5",
+        "name": "spacer",
+        "group": "47527e9fc026a8d5",
+        "order": 22,
+        "width": 11,
+        "height": 1
+    },
+    {
+        "id": "664053789d4d1c5d",
+        "type": "ui_tab",
+        "name": "订单监控界面",
+        "icon": "dashboard",
+        "order": 5,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "4ac73dbc37baf4ab",
+        "type": "ui_group",
+        "name": "",
+        "tab": "664053789d4d1c5d",
+        "order": 1,
+        "disp": true,
+        "width": 30,
+        "collapse": false
+    },
+    {
+        "id": "794a2ded35d09b79",
+        "type": "ui_group",
+        "name": "",
+        "tab": "66376091d99c2303",
+        "order": 2,
+        "disp": true,
+        "width": 15,
+        "collapse": false
+    },
+    {
+        "id": "d8b1e6e3cf946225",
+        "type": "ui_spacer",
+        "z": "d9e1a12b3da58dd5",
+        "name": "spacer",
+        "group": "9d3fc6899a3c3396",
+        "order": 1,
+        "width": 28,
+        "height": 1
+    },
+    {
+        "id": "01ebb0b1af159a91",
+        "type": "ui_spacer",
+        "z": "d9e1a12b3da58dd5",
+        "name": "spacer",
+        "group": "9d3fc6899a3c3396",
+        "order": 3,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "ccb6be0c04430113",
+        "type": "ui_spacer",
+        "z": "d9e1a12b3da58dd5",
+        "name": "spacer",
+        "group": "9d3fc6899a3c3396",
+        "order": 5,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "50a34be726468479",
+        "type": "ui_spacer",
+        "z": "d9e1a12b3da58dd5",
+        "name": "spacer",
+        "group": "9d3fc6899a3c3396",
+        "order": 6,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "b86f0d99cec24618",
+        "type": "ui_spacer",
+        "z": "d9e1a12b3da58dd5",
+        "name": "spacer",
+        "group": "9d3fc6899a3c3396",
+        "order": 7,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "96166db43d7afec8",
+        "type": "ui_spacer",
+        "z": "d9e1a12b3da58dd5",
+        "name": "spacer",
+        "group": "9d3fc6899a3c3396",
+        "order": 8,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "3d15294d2ab63e8b",
+        "type": "ui_spacer",
+        "z": "d9e1a12b3da58dd5",
+        "name": "spacer",
+        "group": "e6796758cf5ea77c",
+        "order": 1,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "b6e9ac91a030604d",
+        "type": "ui_spacer",
+        "z": "d9e1a12b3da58dd5",
+        "name": "spacer",
+        "group": "e6796758cf5ea77c",
+        "order": 3,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "70aa2bbfdae1ec9d",
+        "type": "ui_spacer",
+        "z": "d9e1a12b3da58dd5",
+        "name": "spacer",
+        "group": "e6796758cf5ea77c",
+        "order": 5,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "b226a87ed1f42b4a",
+        "type": "ui_spacer",
+        "z": "d9e1a12b3da58dd5",
+        "name": "spacer",
+        "group": "e6796758cf5ea77c",
+        "order": 6,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "c91f56af31b26f34",
+        "type": "ui_spacer",
+        "z": "d9e1a12b3da58dd5",
+        "name": "spacer",
+        "group": "e6796758cf5ea77c",
+        "order": 7,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "af4f43a864c6bbd2",
+        "type": "ui_spacer",
+        "z": "d9e1a12b3da58dd5",
+        "name": "spacer",
+        "group": "e6796758cf5ea77c",
+        "order": 8,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "d29d1af9270d3dac",
+        "type": "ui_spacer",
+        "z": "d9e1a12b3da58dd5",
+        "name": "spacer",
+        "group": "e6796758cf5ea77c",
+        "order": 9,
+        "width": 22,
+        "height": 1
+    },
+    {
+        "id": "577e58068e0eccb8",
+        "type": "ui_spacer",
+        "z": "d9e1a12b3da58dd5",
+        "name": "spacer",
+        "group": "e6796758cf5ea77c",
+        "order": 10,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "edc9233ad92dcc24",
+        "type": "ui_spacer",
+        "z": "d9e1a12b3da58dd5",
+        "name": "spacer",
+        "group": "e6796758cf5ea77c",
+        "order": 12,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "3cdadad763822331",
+        "type": "ui_spacer",
+        "z": "d9e1a12b3da58dd5",
+        "name": "spacer",
+        "group": "e6796758cf5ea77c",
+        "order": 14,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "e918eb059ea66071",
+        "type": "ui_spacer",
+        "z": "d9e1a12b3da58dd5",
+        "name": "spacer",
+        "group": "e6796758cf5ea77c",
+        "order": 15,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "7e2049d7ba8d59b4",
+        "type": "ui_spacer",
+        "z": "d9e1a12b3da58dd5",
+        "name": "spacer",
+        "group": "e6796758cf5ea77c",
+        "order": 16,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "94e14d39ebba833b",
+        "type": "ui_spacer",
+        "z": "d9e1a12b3da58dd5",
+        "name": "spacer",
+        "group": "e6796758cf5ea77c",
+        "order": 17,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "a05bf1500b4273a0",
+        "type": "ui_spacer",
+        "z": "d9e1a12b3da58dd5",
+        "name": "spacer",
+        "group": "e6796758cf5ea77c",
+        "order": 18,
+        "width": 22,
+        "height": 1
+    },
+    {
+        "id": "6ba9e76ae15becd3",
+        "type": "ui_spacer",
+        "z": "d9e1a12b3da58dd5",
+        "name": "spacer",
+        "group": "e6796758cf5ea77c",
+        "order": 19,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "a8dc379bd7975e42",
+        "type": "ui_spacer",
+        "z": "d9e1a12b3da58dd5",
+        "name": "spacer",
+        "group": "e6796758cf5ea77c",
+        "order": 21,
+        "width": 4,
+        "height": 1
+    },
+    {
+        "id": "cfb7e31b8ade7ee9",
+        "type": "ui_spacer",
+        "z": "d9e1a12b3da58dd5",
+        "name": "spacer",
+        "group": "e6796758cf5ea77c",
+        "order": 23,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "8ef2127430eedadf",
+        "type": "ui_spacer",
+        "z": "d9e1a12b3da58dd5",
+        "name": "spacer",
+        "group": "e6796758cf5ea77c",
+        "order": 24,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "2f5fc52d5ff8638b",
+        "type": "ui_spacer",
+        "z": "d9e1a12b3da58dd5",
+        "name": "spacer",
+        "group": "e6796758cf5ea77c",
+        "order": 25,
+        "width": 4,
+        "height": 1
+    },
+    {
+        "id": "8071bce9399581df",
+        "type": "ui_spacer",
+        "z": "d9e1a12b3da58dd5",
+        "name": "spacer",
+        "group": "e6796758cf5ea77c",
+        "order": 26,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "ba6d21bfe3f9f0ba",
+        "type": "ui_spacer",
+        "z": "d9e1a12b3da58dd5",
+        "name": "spacer",
+        "group": "e6796758cf5ea77c",
+        "order": 27,
+        "width": 22,
+        "height": 1
+    },
+    {
+        "id": "6f43fdf86718962b",
+        "type": "ui_spacer",
+        "z": "d9e1a12b3da58dd5",
+        "name": "spacer",
+        "group": "e6796758cf5ea77c",
+        "order": 28,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "c105462bd6bb58a4",
+        "type": "ui_spacer",
+        "z": "d9e1a12b3da58dd5",
+        "name": "spacer",
+        "group": "e6796758cf5ea77c",
+        "order": 30,
+        "width": 4,
+        "height": 1
+    },
+    {
+        "id": "a3e95d7fa7dba1db",
+        "type": "ui_spacer",
+        "z": "d9e1a12b3da58dd5",
+        "name": "spacer",
+        "group": "e6796758cf5ea77c",
+        "order": 32,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "70d59837ba3729e0",
+        "type": "ui_spacer",
+        "z": "d9e1a12b3da58dd5",
+        "name": "spacer",
+        "group": "e6796758cf5ea77c",
+        "order": 33,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "cec368321d18bd68",
+        "type": "ui_spacer",
+        "z": "d9e1a12b3da58dd5",
+        "name": "spacer",
+        "group": "e6796758cf5ea77c",
+        "order": 34,
+        "width": 4,
+        "height": 1
+    },
+    {
+        "id": "fa250581545c96f5",
+        "type": "ui_spacer",
+        "z": "d9e1a12b3da58dd5",
+        "name": "spacer",
+        "group": "e6796758cf5ea77c",
+        "order": 35,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "5e298e9a9046559a",
+        "type": "ui_spacer",
+        "z": "d9e1a12b3da58dd5",
+        "name": "spacer",
+        "group": "e6796758cf5ea77c",
+        "order": 36,
+        "width": 22,
+        "height": 1
+    },
+    {
+        "id": "74f01bf66c618d8f",
+        "type": "ui_spacer",
+        "z": "d9e1a12b3da58dd5",
+        "name": "spacer",
+        "group": "e6796758cf5ea77c",
+        "order": 37,
+        "width": 7,
+        "height": 1
+    },
+    {
+        "id": "0ffb42c86981cef9",
+        "type": "ui_spacer",
+        "z": "d9e1a12b3da58dd5",
+        "name": "spacer",
+        "group": "e6796758cf5ea77c",
+        "order": 39,
+        "width": 7,
+        "height": 1
+    },
+    {
+        "id": "0ce1ef14d0a1ebf5",
+        "type": "ui_spacer",
+        "z": "d9e1a12b3da58dd5",
+        "name": "spacer",
+        "group": "4ac73dbc37baf4ab",
+        "order": 1,
+        "width": 6,
+        "height": 1
+    },
+    {
+        "id": "5ba22eb96f1ba612",
+        "type": "ui_spacer",
+        "z": "d9e1a12b3da58dd5",
+        "name": "spacer",
+        "group": "4ac73dbc37baf4ab",
+        "order": 3,
+        "width": 8,
+        "height": 1
+    },
+    {
+        "id": "0a4bdb07f15dcf88",
+        "type": "ui_spacer",
+        "z": "d9e1a12b3da58dd5",
+        "name": "spacer",
+        "group": "4ac73dbc37baf4ab",
+        "order": 4,
+        "width": 6,
+        "height": 1
+    },
+    {
+        "id": "48415d9c35a850cf",
+        "type": "ui_spacer",
+        "z": "d9e1a12b3da58dd5",
+        "name": "spacer",
+        "group": "4ac73dbc37baf4ab",
+        "order": 5,
+        "width": 8,
+        "height": 1
+    },
+    {
+        "id": "2eb5e769d0fa7289",
+        "type": "ui_spacer",
+        "z": "d9e1a12b3da58dd5",
+        "name": "spacer",
+        "group": "4ac73dbc37baf4ab",
+        "order": 6,
+        "width": 6,
+        "height": 1
+    },
+    {
+        "id": "747ff2b6bfed674b",
+        "type": "ui_spacer",
+        "z": "d9e1a12b3da58dd5",
+        "name": "spacer",
+        "group": "4ac73dbc37baf4ab",
+        "order": 7,
+        "width": 8,
+        "height": 1
+    },
+    {
+        "id": "dea881f548791aac",
+        "type": "ui_spacer",
+        "z": "d9e1a12b3da58dd5",
+        "name": "spacer",
+        "group": "4ac73dbc37baf4ab",
+        "order": 8,
+        "width": 6,
+        "height": 1
+    },
+    {
+        "id": "89b7475ccd64caee",
+        "type": "ui_spacer",
+        "z": "d9e1a12b3da58dd5",
+        "name": "spacer",
+        "group": "4ac73dbc37baf4ab",
+        "order": 9,
+        "width": 8,
+        "height": 1
+    },
+    {
+        "id": "314d6b77a933c070",
+        "type": "ui_spacer",
+        "z": "d9e1a12b3da58dd5",
+        "name": "spacer",
+        "group": "4ac73dbc37baf4ab",
+        "order": 10,
+        "width": 6,
+        "height": 1
+    },
+    {
+        "id": "e3f7d9150b956bf7",
+        "type": "ui_spacer",
+        "z": "d9e1a12b3da58dd5",
+        "name": "spacer",
+        "group": "4ac73dbc37baf4ab",
+        "order": 11,
+        "width": 8,
+        "height": 1
+    },
+    {
+        "id": "990808cad5a8bcad",
+        "type": "ui_spacer",
+        "z": "d9e1a12b3da58dd5",
+        "name": "spacer",
+        "group": "4ac73dbc37baf4ab",
+        "order": 12,
+        "width": 6,
+        "height": 1
+    },
+    {
+        "id": "8976ef840581d260",
+        "type": "ui_spacer",
+        "z": "d9e1a12b3da58dd5",
+        "name": "spacer",
+        "group": "4ac73dbc37baf4ab",
+        "order": 13,
+        "width": 8,
+        "height": 1
+    },
+    {
+        "id": "d855e21e20c95e87",
+        "type": "ui_spacer",
+        "z": "d9e1a12b3da58dd5",
+        "name": "spacer",
+        "group": "4ac73dbc37baf4ab",
+        "order": 14,
+        "width": 6,
+        "height": 1
+    },
+    {
+        "id": "f61232c82d3d0450",
+        "type": "ui_spacer",
+        "z": "d9e1a12b3da58dd5",
+        "name": "spacer",
+        "group": "4ac73dbc37baf4ab",
+        "order": 15,
+        "width": 8,
+        "height": 1
+    },
+    {
+        "id": "bdb41df4402f097f",
+        "type": "ui_spacer",
+        "z": "d9e1a12b3da58dd5",
+        "name": "spacer",
+        "group": "4ac73dbc37baf4ab",
+        "order": 16,
+        "width": 6,
+        "height": 1
+    },
+    {
+        "id": "e519cc7237591287",
+        "type": "ui_spacer",
+        "z": "d9e1a12b3da58dd5",
+        "name": "spacer",
+        "group": "4ac73dbc37baf4ab",
+        "order": 17,
+        "width": 8,
+        "height": 1
+    },
+    {
+        "id": "b1c760bf8ad74e35",
+        "type": "ui_spacer",
+        "z": "d9e1a12b3da58dd5",
+        "name": "spacer",
+        "group": "4ac73dbc37baf4ab",
+        "order": 18,
+        "width": 6,
+        "height": 1
+    },
+    {
+        "id": "0ef5fb1bcd0e925e",
+        "type": "ui_spacer",
+        "z": "d9e1a12b3da58dd5",
+        "name": "spacer",
+        "group": "4ac73dbc37baf4ab",
+        "order": 19,
+        "width": 8,
+        "height": 1
+    },
+    {
+        "id": "6d439fdd0944ddbc",
+        "type": "ui_spacer",
+        "z": "d9e1a12b3da58dd5",
+        "name": "spacer",
+        "group": "4ac73dbc37baf4ab",
+        "order": 20,
+        "width": 6,
+        "height": 1
+    },
+    {
+        "id": "28d04e8ece4e1fcf",
+        "type": "ui_spacer",
+        "z": "d9e1a12b3da58dd5",
+        "name": "spacer",
+        "group": "4ac73dbc37baf4ab",
+        "order": 21,
+        "width": 8,
+        "height": 1
+    },
+    {
+        "id": "0fdd234098a8c76d",
+        "type": "ui_spacer",
+        "z": "d9e1a12b3da58dd5",
+        "name": "spacer",
+        "group": "4ac73dbc37baf4ab",
+        "order": 22,
+        "width": 6,
+        "height": 1
+    },
+    {
+        "id": "1b1ff350be538401",
+        "type": "ui_spacer",
+        "z": "d9e1a12b3da58dd5",
+        "name": "spacer",
+        "group": "4ac73dbc37baf4ab",
+        "order": 23,
+        "width": 8,
+        "height": 1
+    },
+    {
+        "id": "2069f3c1637a06b9",
+        "type": "ui_spacer",
+        "z": "d9e1a12b3da58dd5",
+        "name": "spacer",
+        "group": "4ac73dbc37baf4ab",
+        "order": 24,
+        "width": 6,
+        "height": 1
+    },
+    {
+        "id": "cea3f4d38a05b693",
+        "type": "ui_spacer",
+        "z": "d9e1a12b3da58dd5",
+        "name": "spacer",
+        "group": "4ac73dbc37baf4ab",
+        "order": 25,
+        "width": 8,
+        "height": 1
+    },
+    {
+        "id": "bc325b937544dff0",
+        "type": "ui_spacer",
+        "z": "d9e1a12b3da58dd5",
+        "name": "spacer",
+        "group": "4ac73dbc37baf4ab",
+        "order": 26,
+        "width": 6,
+        "height": 1
+    },
+    {
+        "id": "1f56e731e5b07370",
+        "type": "ui_spacer",
+        "z": "d9e1a12b3da58dd5",
+        "name": "spacer",
+        "group": "4ac73dbc37baf4ab",
+        "order": 27,
+        "width": 8,
+        "height": 1
+    },
+    {
+        "id": "75e50e2253ed9c16",
+        "type": "ui_spacer",
+        "z": "d9e1a12b3da58dd5",
+        "name": "spacer",
+        "group": "42c5fec8c1d6f527",
+        "order": 4,
+        "width": 15,
+        "height": 1
+    },
+    {
+        "id": "be97bbcc00872f0e",
+        "type": "ui_spacer",
+        "z": "d9e1a12b3da58dd5",
+        "name": "spacer",
+        "group": "42c5fec8c1d6f527",
+        "order": 8,
+        "width": 15,
+        "height": 1
+    },
+    {
+        "id": "b4f635e8ebe2e82d",
+        "type": "ui_spacer",
+        "z": "d9e1a12b3da58dd5",
+        "name": "spacer",
+        "group": "42c5fec8c1d6f527",
+        "order": 10,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "90173c766db95254",
+        "type": "ui_spacer",
+        "z": "d9e1a12b3da58dd5",
+        "name": "spacer",
+        "group": "42c5fec8c1d6f527",
+        "order": 12,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "2e7e4a1ef2e30bca",
+        "type": "ui_spacer",
+        "z": "d9e1a12b3da58dd5",
+        "name": "spacer",
+        "group": "42c5fec8c1d6f527",
+        "order": 13,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "2496dc18b215d55a",
+        "type": "ui_spacer",
+        "z": "d9e1a12b3da58dd5",
+        "name": "spacer",
+        "group": "42c5fec8c1d6f527",
+        "order": 14,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "4667b3653ff1c104",
+        "type": "ui_spacer",
+        "z": "d9e1a12b3da58dd5",
+        "name": "spacer",
+        "group": "794a2ded35d09b79",
+        "order": 2,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "d93ad7eb7566a1bc",
+        "type": "ui_spacer",
+        "z": "d9e1a12b3da58dd5",
+        "name": "spacer",
+        "group": "794a2ded35d09b79",
+        "order": 4,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "6d18b8102efae556",
+        "type": "ui_spacer",
+        "z": "d9e1a12b3da58dd5",
+        "name": "spacer",
+        "group": "794a2ded35d09b79",
+        "order": 5,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "e8ff74cb25adc5aa",
+        "type": "ui_spacer",
+        "z": "d9e1a12b3da58dd5",
+        "name": "spacer",
+        "group": "794a2ded35d09b79",
+        "order": 6,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "2282ec945cb968d7",
+        "type": "ui_spacer",
+        "z": "d9e1a12b3da58dd5",
+        "name": "spacer",
+        "group": "794a2ded35d09b79",
+        "order": 7,
+        "width": 15,
+        "height": 1
+    },
+    {
+        "id": "0f744d6cd96bb4d8",
+        "type": "ui_spacer",
+        "z": "d9e1a12b3da58dd5",
+        "name": "spacer",
+        "group": "794a2ded35d09b79",
+        "order": 9,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "85abcb857ab81b49",
+        "type": "ui_spacer",
+        "z": "d9e1a12b3da58dd5",
+        "name": "spacer",
+        "group": "794a2ded35d09b79",
+        "order": 11,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "8a802904730113b5",
+        "type": "ui_spacer",
+        "z": "d9e1a12b3da58dd5",
+        "name": "spacer",
+        "group": "794a2ded35d09b79",
+        "order": 12,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "a67872ca95a7ef01",
+        "type": "ui_spacer",
+        "z": "d9e1a12b3da58dd5",
+        "name": "spacer",
+        "group": "794a2ded35d09b79",
+        "order": 13,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "3e564da8947a6742",
+        "type": "ui_spacer",
+        "z": "d9e1a12b3da58dd5",
+        "name": "spacer",
+        "group": "794a2ded35d09b79",
+        "order": 14,
+        "width": 15,
+        "height": 1
+    },
+    {
+        "id": "042f8196f844074a",
+        "type": "ui_spacer",
+        "z": "d9e1a12b3da58dd5",
+        "name": "spacer",
+        "group": "794a2ded35d09b79",
+        "order": 15,
+        "width": 15,
+        "height": 1
+    },
+    {
+        "id": "fc8ce509f6cfa2df",
+        "type": "ui_spacer",
+        "z": "d9e1a12b3da58dd5",
+        "name": "spacer",
+        "group": "794a2ded35d09b79",
+        "order": 16,
+        "width": 10,
+        "height": 1
+    },
+    {
+        "id": "42ef95219a81319a",
+        "type": "s7 control",
+        "z": "d9e1a12b3da58dd5",
+        "endpoint": "e69f8a5b704de773",
+        "function": "cycletime",
+        "name": "1500",
+        "x": 930,
+        "y": 40,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "212e775a86324fab",
+        "type": "ui_button",
+        "z": "d9e1a12b3da58dd5",
+        "name": "",
+        "group": "e6796758cf5ea77c",
+        "order": 38,
+        "width": 8,
+        "height": 1,
+        "passthru": false,
+        "label": "下单",
+        "tooltip": "点击即可下单",
+        "color": "black",
+        "bgcolor": "white",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 1170,
+        "y": 600,
+        "wires": [
+            [
+                "a08379ca4a981489"
+            ]
+        ]
+    },
+    {
+        "id": "9c389e1a81a655bc",
+        "type": "s7 out",
+        "z": "d9e1a12b3da58dd5",
+        "endpoint": "e69f8a5b704de773",
+        "variable": "下单",
+        "name": "下单",
+        "x": 1610,
+        "y": 600,
+        "wires": []
+    },
+    {
+        "id": "a08379ca4a981489",
+        "type": "trigger",
+        "z": "d9e1a12b3da58dd5",
+        "name": "",
+        "op1": "true",
+        "op2": "false",
+        "op1type": "bool",
+        "op2type": "bool",
+        "duration": "250",
+        "extend": false,
+        "overrideDelay": false,
+        "units": "ms",
+        "reset": "",
+        "bytopic": "all",
+        "topic": "topic",
+        "outputs": 1,
+        "x": 1390,
+        "y": 600,
+        "wires": [
+            [
+                "9c389e1a81a655bc"
+            ]
+        ]
+    },
+    {
+        "id": "52d704da862c0f9d",
+        "type": "ui_dropdown",
+        "z": "d9e1a12b3da58dd5",
+        "name": "",
+        "label": "底盒颜色选择",
+        "tooltip": "",
+        "place": "Select option",
+        "group": "e6796758cf5ea77c",
+        "order": 4,
+        "width": 9,
+        "height": 2,
+        "passthru": true,
+        "multiple": false,
+        "options": [
+            {
+                "label": "红色",
+                "value": "1",
+                "type": "str"
+            },
+            {
+                "label": "绿色",
+                "value": "2",
+                "type": "str"
+            },
+            {
+                "label": "蓝色",
+                "value": "3",
+                "type": "str"
+            }
+        ],
+        "payload": "",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 1200,
+        "y": 320,
+        "wires": [
+            [
+                "5cf9fac5b7760d21"
+            ]
+        ]
+    },
+    {
+        "id": "5cf9fac5b7760d21",
+        "type": "s7 out",
+        "z": "d9e1a12b3da58dd5",
+        "endpoint": "e69f8a5b704de773",
+        "variable": "底盒颜色选择",
+        "name": "dh颜色选择",
+        "x": 1450,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "60fcc05be95c249b",
+        "type": "ui_dropdown",
+        "z": "d9e1a12b3da58dd5",
+        "name": "",
+        "label": "料芯颜色选择",
+        "tooltip": "",
+        "place": "Select option",
+        "group": "e6796758cf5ea77c",
+        "order": 2,
+        "width": 9,
+        "height": 2,
+        "passthru": true,
+        "multiple": false,
+        "options": [
+            {
+                "label": "红色",
+                "value": "1",
+                "type": "str"
+            },
+            {
+                "label": "绿色",
+                "value": "2",
+                "type": "str"
+            },
+            {
+                "label": "蓝色",
+                "value": "3",
+                "type": "str"
+            }
+        ],
+        "payload": "",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 1200,
+        "y": 380,
+        "wires": [
+            [
+                "cf1a6e9b3fac0db7"
+            ]
+        ]
+    },
+    {
+        "id": "cf1a6e9b3fac0db7",
+        "type": "s7 out",
+        "z": "d9e1a12b3da58dd5",
+        "endpoint": "e69f8a5b704de773",
+        "variable": "书签颜色选择",
+        "name": "lx颜色选择",
+        "x": 1450,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "5b425f87e5c51e0e",
+        "type": "ui_dropdown",
+        "z": "d9e1a12b3da58dd5",
+        "name": "",
+        "label": "盒盖颜色选择",
+        "tooltip": "",
+        "place": "Select option",
+        "group": "e6796758cf5ea77c",
+        "order": 11,
+        "width": 9,
+        "height": 2,
+        "passthru": true,
+        "multiple": false,
+        "options": [
+            {
+                "label": "红色",
+                "value": "1",
+                "type": "str"
+            },
+            {
+                "label": "绿色",
+                "value": "2",
+                "type": "str"
+            },
+            {
+                "label": "蓝色",
+                "value": "3",
+                "type": "str"
+            }
+        ],
+        "payload": "",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 1200,
+        "y": 440,
+        "wires": [
+            [
+                "facd922d07f59d45"
+            ]
+        ]
+    },
+    {
+        "id": "facd922d07f59d45",
+        "type": "s7 out",
+        "z": "d9e1a12b3da58dd5",
+        "endpoint": "e69f8a5b704de773",
+        "variable": "盒盖颜色选择",
+        "name": "hg颜色选择",
+        "x": 1450,
+        "y": 440,
+        "wires": []
+    },
+    {
+        "id": "cc54fcdff11f3a32",
+        "type": "ui_dropdown",
+        "z": "d9e1a12b3da58dd5",
+        "name": "",
+        "label": "仓位选择",
+        "tooltip": "",
+        "place": "Select option",
+        "group": "e6796758cf5ea77c",
+        "order": 13,
+        "width": 9,
+        "height": 2,
+        "passthru": true,
+        "multiple": false,
+        "options": [
+            {
+                "label": "A",
+                "value": "1",
+                "type": "str"
+            },
+            {
+                "label": "B",
+                "value": "2",
+                "type": "str"
+            },
+            {
+                "label": "C",
+                "value": "3",
+                "type": "str"
+            },
+            {
+                "label": "D",
+                "value": "4",
+                "type": "str"
+            },
+            {
+                "label": "E",
+                "value": "5",
+                "type": "str"
+            },
+            {
+                "label": "F",
+                "value": "6",
+                "type": "str"
+            },
+            {
+                "label": "G",
+                "value": "7",
+                "type": "str"
+            },
+            {
+                "label": "H",
+                "value": "8",
+                "type": "str"
+            },
+            {
+                "label": "I",
+                "value": "9",
+                "type": "str"
+            }
+        ],
+        "payload": "",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 1180,
+        "y": 540,
+        "wires": [
+            [
+                "a30be5fc39bf16aa"
+            ]
+        ]
+    },
+    {
+        "id": "a30be5fc39bf16aa",
+        "type": "s7 out",
+        "z": "d9e1a12b3da58dd5",
+        "endpoint": "e69f8a5b704de773",
+        "variable": "CW",
+        "name": "cw选择",
+        "x": 1420,
+        "y": 540,
+        "wires": []
+    },
+    {
+        "id": "fa4e398e76f4b1bd",
+        "type": "ui_text_input",
+        "z": "d9e1a12b3da58dd5",
+        "name": "",
+        "label": "账号",
+        "tooltip": "",
+        "group": "47527e9fc026a8d5",
+        "order": 3,
+        "width": 10,
+        "height": 2,
+        "passthru": true,
+        "mode": "text",
+        "delay": 300,
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 150,
+        "y": 360,
+        "wires": [
+            [
+                "c1b96b9530231b02"
+            ]
+        ]
+    },
+    {
+        "id": "eb1eb0443e266fc8",
+        "type": "ui_text_input",
+        "z": "d9e1a12b3da58dd5",
+        "name": "",
+        "label": "密码",
+        "tooltip": "",
+        "group": "47527e9fc026a8d5",
+        "order": 8,
+        "width": 10,
+        "height": 2,
+        "passthru": true,
+        "mode": "text",
+        "delay": 300,
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 150,
+        "y": 420,
+        "wires": [
+            [
+                "7a6c9dc84b97a85e"
+            ]
+        ]
+    },
+    {
+        "id": "597d08b9b109fd03",
+        "type": "ui_button",
+        "z": "d9e1a12b3da58dd5",
+        "name": "",
+        "group": "47527e9fc026a8d5",
+        "order": 19,
+        "width": 4,
+        "height": 1,
+        "passthru": false,
+        "label": "登录",
+        "tooltip": "",
+        "color": "black",
+        "bgcolor": "#F6F1F1",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 150,
+        "y": 480,
+        "wires": [
+            [
+                "f415938989db5b27"
+            ]
+        ]
+    },
+    {
+        "id": "c1b96b9530231b02",
+        "type": "change",
+        "z": "d9e1a12b3da58dd5",
+        "name": "",
+        "rules": [
+            {
+                "t": "move",
+                "p": "payload",
+                "pt": "msg",
+                "to": "zh",
+                "tot": "global"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 390,
+        "y": 360,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "7a6c9dc84b97a85e",
+        "type": "change",
+        "z": "d9e1a12b3da58dd5",
+        "name": "",
+        "rules": [
+            {
+                "t": "move",
+                "p": "payload",
+                "pt": "msg",
+                "to": "mm",
+                "tot": "global"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 390,
+        "y": 420,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "f345ae21398ac06e",
+        "type": "s7 in",
+        "z": "d9e1a12b3da58dd5",
+        "endpoint": "e69f8a5b704de773",
+        "mode": "single",
+        "variable": "已使用料盒",
+        "diff": true,
+        "name": "",
+        "x": 1180,
+        "y": 660,
+        "wires": [
+            [
+                "488b0eda5ff20288"
+            ]
+        ]
+    },
+    {
+        "id": "be961f8af85b929e",
+        "type": "s7 in",
+        "z": "d9e1a12b3da58dd5",
+        "endpoint": "e69f8a5b704de773",
+        "mode": "single",
+        "variable": "左仓料芯",
+        "diff": true,
+        "name": "",
+        "x": 1180,
+        "y": 700,
+        "wires": [
+            [
+                "2a0ab90d71dc4f1c"
+            ]
+        ]
+    },
+    {
+        "id": "262bc0e6d53858f8",
+        "type": "s7 in",
+        "z": "d9e1a12b3da58dd5",
+        "endpoint": "e69f8a5b704de773",
+        "mode": "single",
+        "variable": "右仓料芯",
+        "diff": true,
+        "name": "",
+        "x": 1180,
+        "y": 740,
+        "wires": [
+            [
+                "5bf89b3ed01669d2"
+            ]
+        ]
+    },
+    {
+        "id": "4d0b2bd1d4a9c4ee",
+        "type": "s7 in",
+        "z": "d9e1a12b3da58dd5",
+        "endpoint": "e69f8a5b704de773",
+        "mode": "single",
+        "variable": "盒盖当前数量",
+        "diff": true,
+        "name": "",
+        "x": 1190,
+        "y": 780,
+        "wires": [
+            [
+                "9b36b413c0e2a5ad"
+            ]
+        ]
+    },
+    {
+        "id": "6e196a8d9b64ab38",
+        "type": "s7 in",
+        "z": "d9e1a12b3da58dd5",
+        "endpoint": "e69f8a5b704de773",
+        "mode": "single",
+        "variable": "合格件当前数量",
+        "diff": true,
+        "name": "",
+        "x": 1200,
+        "y": 820,
+        "wires": [
+            [
+                "85f4d27ca27a8e74"
+            ]
+        ]
+    },
+    {
+        "id": "45789257d89d1faf",
+        "type": "s7 in",
+        "z": "d9e1a12b3da58dd5",
+        "endpoint": "e69f8a5b704de773",
+        "mode": "single",
+        "variable": "温度值",
+        "diff": true,
+        "name": "",
+        "x": 1170,
+        "y": 860,
+        "wires": [
+            [
+                "9c28ab3014beb6f7"
+            ]
+        ]
+    },
+    {
+        "id": "17807b73882c4fe9",
+        "type": "s7 in",
+        "z": "d9e1a12b3da58dd5",
+        "endpoint": "e69f8a5b704de773",
+        "mode": "single",
+        "variable": "湿度值",
+        "diff": true,
+        "name": "",
+        "x": 1170,
+        "y": 900,
+        "wires": [
+            [
+                "c0098ae696e7c7ad"
+            ]
+        ]
+    },
+    {
+        "id": "488b0eda5ff20288",
+        "type": "ui_gauge",
+        "z": "d9e1a12b3da58dd5",
+        "name": "",
+        "group": "42c5fec8c1d6f527",
+        "order": 2,
+        "width": 5,
+        "height": 3,
+        "gtype": "donut",
+        "title": "已使用料盒",
+        "label": "",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "10",
+        "colors": [
+            "#696eec",
+            "#563ae4",
+            "#2d13f1"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "x": 1530,
+        "y": 660,
+        "wires": []
+    },
+    {
+        "id": "c89a32aa15920f33",
+        "type": "ui_chart",
+        "z": "d9e1a12b3da58dd5",
+        "name": "",
+        "group": "794a2ded35d09b79",
+        "order": 3,
+        "width": 7,
+        "height": 4,
+        "label": "当前电流",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "x": 1520,
+        "y": 960,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "47155ee564310207",
+        "type": "ui_chart",
+        "z": "d9e1a12b3da58dd5",
+        "name": "",
+        "group": "794a2ded35d09b79",
+        "order": 1,
+        "width": 7,
+        "height": 4,
+        "label": "当前电压",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "x": 1520,
+        "y": 1000,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "c0098ae696e7c7ad",
+        "type": "ui_gauge",
+        "z": "d9e1a12b3da58dd5",
+        "name": "",
+        "group": "42c5fec8c1d6f527",
+        "order": 11,
+        "width": 7,
+        "height": 4,
+        "gtype": "wave",
+        "title": "湿度值",
+        "label": "%",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "100",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "x": 1510,
+        "y": 900,
+        "wires": []
+    },
+    {
+        "id": "9c28ab3014beb6f7",
+        "type": "ui_gauge",
+        "z": "d9e1a12b3da58dd5",
+        "name": "",
+        "group": "42c5fec8c1d6f527",
+        "order": 9,
+        "width": 7,
+        "height": 4,
+        "gtype": "wave",
+        "title": "温度值",
+        "label": "°C",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "100",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "x": 1510,
+        "y": 860,
+        "wires": []
+    },
+    {
+        "id": "10af051d16ea02f3",
+        "type": "s7 in",
+        "z": "d9e1a12b3da58dd5",
+        "endpoint": "e69f8a5b704de773",
+        "mode": "single",
+        "variable": "当前电流",
+        "diff": true,
+        "name": "",
+        "x": 1180,
+        "y": 960,
+        "wires": [
+            [
+                "c89a32aa15920f33"
+            ]
+        ]
+    },
+    {
+        "id": "9d0955b82daac9d1",
+        "type": "s7 in",
+        "z": "d9e1a12b3da58dd5",
+        "endpoint": "e69f8a5b704de773",
+        "mode": "single",
+        "variable": "当前电压",
+        "diff": true,
+        "name": "",
+        "x": 1180,
+        "y": 1000,
+        "wires": [
+            [
+                "47155ee564310207"
+            ]
+        ]
+    },
+    {
+        "id": "8811bf45ed4a133e",
+        "type": "e-mail",
+        "z": "d9e1a12b3da58dd5",
+        "server": "smtp.163.com",
+        "port": "465",
+        "authtype": "BASIC",
+        "saslformat": true,
+        "token": "oauth2Response.access_token",
+        "secure": true,
+        "tls": true,
+        "name": "167728867@qq.com",
+        "dname": "",
+        "x": 820,
+        "y": 1040,
+        "wires": []
+    },
+    {
+        "id": "f415938989db5b27",
+        "type": "function",
+        "z": "d9e1a12b3da58dd5",
+        "name": "function 3",
+        "func": "var zh = global.get(\"zh\");\nvar mm = global.get(\"mm\");\nvar azh = global.get(\"azh\") || \"admin\";\nvar amm = global.get(\"amm\") || \"123456\";\nif ((zh === azh) && (mm === amm))\n    msg.payload = \"yes\"\nelse\n    msg.payload =\"no\"\nreturn msg;\n// return msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 340,
+        "y": 480,
+        "wires": [
+            [
+                "35ac89562fa08f5d",
+                "a8de0eca67ab6dda"
+            ]
+        ]
+    },
+    {
+        "id": "35ac89562fa08f5d",
+        "type": "function",
+        "z": "d9e1a12b3da58dd5",
+        "name": "function 4",
+        "func": "if (msg.payload===\"yes\")\nmsg.payload={\n    \"tabs\":{\n        \"hide\":[\n            \"登录界面\",\n            \"主界面\",\n            \"订单操作界面\"\n        ],\n        \"show\":[\n            \"数据监控界面\"\n        ]\n    }\n}\nelse\nvar msg1 ={payload :\"账号或密码错误\"}\nreturn [msg,msg1];",
+        "outputs": 2,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 580,
+        "y": 460,
+        "wires": [
+            [
+                "48198d9a88075633"
+            ],
+            [
+                "7cb2ca12ac3f6a4a"
+            ]
+        ]
+    },
+    {
+        "id": "48198d9a88075633",
+        "type": "ui_ui_control",
+        "z": "d9e1a12b3da58dd5",
+        "name": "",
+        "events": "all",
+        "x": 880,
+        "y": 460,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "7cb2ca12ac3f6a4a",
+        "type": "ui_toast",
+        "z": "d9e1a12b3da58dd5",
+        "position": "dialog",
+        "displayTime": "3",
+        "highlight": "",
+        "sendall": true,
+        "outputs": 1,
+        "ok": "OK",
+        "cancel": "",
+        "raw": false,
+        "topic": "",
+        "name": "",
+        "x": 890,
+        "y": 520,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "a8de0eca67ab6dda",
+        "type": "function",
+        "z": "d9e1a12b3da58dd5",
+        "name": "function 5",
+        "func": "if (msg.payload ===\"yes\")\n    msg.payload ={\n        \"tab\" :\"数据监控界面\"\n    }\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 580,
+        "y": 520,
+        "wires": [
+            [
+                "48198d9a88075633"
+            ]
+        ]
+    },
+    {
+        "id": "34ced4ee0fe98f16",
+        "type": "function",
+        "z": "d9e1a12b3da58dd5",
+        "name": "function 6",
+        "func": "msg.payload ={\n    \"tabs\" :{\n        \"hide\":[\n            \"订单操作界面\",\n            \"订单监控界面\",\n            \"数据监控界面\"\n        ],\n        \"show\":[\n            \"登录界面\"\n        ]\n    }\n}\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 400,
+        "y": 700,
+        "wires": [
+            [
+                "8f811ec6024431a5"
+            ]
+        ]
+    },
+    {
+        "id": "ba7bb027a83741c5",
+        "type": "function",
+        "z": "d9e1a12b3da58dd5",
+        "name": "function 7",
+        "func": "msg.payload ={\n    \"tab\":\"登录界面\"\n}\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 400,
+        "y": 740,
+        "wires": [
+            [
+                "8f811ec6024431a5"
+            ]
+        ]
+    },
+    {
+        "id": "8f811ec6024431a5",
+        "type": "ui_ui_control",
+        "z": "d9e1a12b3da58dd5",
+        "name": "",
+        "events": "all",
+        "x": 800,
+        "y": 720,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "fa6a6e3da6222786",
+        "type": "ui_button",
+        "z": "d9e1a12b3da58dd5",
+        "name": "",
+        "group": "794a2ded35d09b79",
+        "order": 17,
+        "width": 5,
+        "height": 1,
+        "passthru": false,
+        "label": "退出登录",
+        "tooltip": "",
+        "color": "black",
+        "bgcolor": "white",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 160,
+        "y": 720,
+        "wires": [
+            [
+                "34ced4ee0fe98f16",
+                "ba7bb027a83741c5"
+            ]
+        ]
+    },
+    {
+        "id": "997789da335533da",
+        "type": "s7 out",
+        "z": "d9e1a12b3da58dd5",
+        "endpoint": "e69f8a5b704de773",
+        "variable": "大黄钢珠",
+        "name": "",
+        "x": 1360,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "f1b7724832dff721",
+        "type": "ui_text_input",
+        "z": "d9e1a12b3da58dd5",
+        "name": "",
+        "label": "大黄钢珠颗数",
+        "tooltip": "",
+        "group": "e6796758cf5ea77c",
+        "order": 20,
+        "width": 7,
+        "height": 2,
+        "passthru": true,
+        "mode": "number",
+        "delay": 300,
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 1200,
+        "y": 140,
+        "wires": [
+            [
+                "997789da335533da"
+            ]
+        ]
+    },
+    {
+        "id": "e85fcf12af1fadde",
+        "type": "s7 out",
+        "z": "d9e1a12b3da58dd5",
+        "endpoint": "e69f8a5b704de773",
+        "variable": "小黄钢珠",
+        "name": "",
+        "x": 1360,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "debca25436a34136",
+        "type": "ui_text_input",
+        "z": "d9e1a12b3da58dd5",
+        "name": "",
+        "label": "小黄钢珠颗数",
+        "tooltip": "",
+        "group": "e6796758cf5ea77c",
+        "order": 29,
+        "width": 7,
+        "height": 2,
+        "passthru": true,
+        "mode": "number",
+        "delay": 300,
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 1200,
+        "y": 180,
+        "wires": [
+            [
+                "e85fcf12af1fadde"
+            ]
+        ]
+    },
+    {
+        "id": "9d270cd9046e4d7f",
+        "type": "s7 out",
+        "z": "d9e1a12b3da58dd5",
+        "endpoint": "e69f8a5b704de773",
+        "variable": "大绿钢珠",
+        "name": "",
+        "x": 1360,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "c7d3bb5cce2cb6a1",
+        "type": "ui_text_input",
+        "z": "d9e1a12b3da58dd5",
+        "name": "",
+        "label": "大绿钢珠颗数",
+        "tooltip": "",
+        "group": "e6796758cf5ea77c",
+        "order": 22,
+        "width": 7,
+        "height": 2,
+        "passthru": true,
+        "mode": "number",
+        "delay": 300,
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 1200,
+        "y": 220,
+        "wires": [
+            [
+                "9d270cd9046e4d7f"
+            ]
+        ]
+    },
+    {
+        "id": "b3436c77b04aee9c",
+        "type": "s7 out",
+        "z": "d9e1a12b3da58dd5",
+        "endpoint": "e69f8a5b704de773",
+        "variable": "小绿钢珠",
+        "name": "",
+        "x": 1360,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "1c4ce453b0b59524",
+        "type": "ui_text_input",
+        "z": "d9e1a12b3da58dd5",
+        "name": "",
+        "label": "小绿钢珠颗数",
+        "tooltip": "",
+        "group": "e6796758cf5ea77c",
+        "order": 31,
+        "width": 7,
+        "height": 2,
+        "passthru": true,
+        "mode": "number",
+        "delay": 300,
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 1200,
+        "y": 260,
+        "wires": [
+            [
+                "b3436c77b04aee9c"
+            ]
+        ]
+    },
+    {
+        "id": "d428a1a656eeb60a",
+        "type": "function",
+        "z": "d9e1a12b3da58dd5",
+        "name": "function 8",
+        "func": "var dd = global.get(\"dd\");\nvar qrwc  = global.get(\"qrwc\");\nif (qrwc==true)\nmsg.payload = dd + '订单已完成'\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 580,
+        "y": 1040,
+        "wires": [
+            [
+                "8811bf45ed4a133e"
+            ]
+        ]
+    },
+    {
+        "id": "d3eafaf0a8a7d93a",
+        "type": "change",
+        "z": "d9e1a12b3da58dd5",
+        "name": "",
+        "rules": [
+            {
+                "t": "move",
+                "p": "payload",
+                "pt": "msg",
+                "to": "dd",
+                "tot": "global"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 690,
+        "y": 1160,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "dbd5fdf51dddb4bd",
+        "type": "inject",
+        "z": "d9e1a12b3da58dd5",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "1号",
+        "payloadType": "str",
+        "x": 150,
+        "y": 1160,
+        "wires": [
+            [
+                "d3eafaf0a8a7d93a"
+            ]
+        ]
+    },
+    {
+        "id": "eafd2bcb2e888a1e",
+        "type": "inject",
+        "z": "d9e1a12b3da58dd5",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "v": "true",
+                "vt": "bool"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "true",
+        "payloadType": "bool",
+        "x": 150,
+        "y": 1040,
+        "wires": [
+            [
+                "a1092e092d9e0b39",
+                "d428a1a656eeb60a"
+            ]
+        ]
+    },
+    {
+        "id": "a1092e092d9e0b39",
+        "type": "change",
+        "z": "d9e1a12b3da58dd5",
+        "name": "",
+        "rules": [
+            {
+                "t": "move",
+                "p": "payload",
+                "pt": "msg",
+                "to": "qrwc",
+                "tot": "global"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 390,
+        "y": 1100,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "38a1b1e94690aef7",
+        "type": "ui_button",
+        "z": "d9e1a12b3da58dd5",
+        "name": "",
+        "group": "9d3fc6899a3c3396",
+        "order": 2,
+        "width": 13,
+        "height": 5,
+        "passthru": false,
+        "label": "管理者",
+        "tooltip": "",
+        "color": "black",
+        "bgcolor": "#e7e5ed",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 150,
+        "y": 120,
+        "wires": [
+            [
+                "2d71f775937ae746",
+                "e45f08b67ebd89ce"
+            ]
+        ]
+    },
+    {
+        "id": "6d357ef7f0f21d21",
+        "type": "ui_button",
+        "z": "d9e1a12b3da58dd5",
+        "name": "",
+        "group": "9d3fc6899a3c3396",
+        "order": 4,
+        "width": 13,
+        "height": 5,
+        "passthru": false,
+        "label": "客户",
+        "tooltip": "",
+        "color": "black",
+        "bgcolor": "#e7e5ed",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 150,
+        "y": 240,
+        "wires": [
+            [
+                "c2897a21905db43f",
+                "398cae22227f9609"
+            ]
+        ]
+    },
+    {
+        "id": "2d71f775937ae746",
+        "type": "function",
+        "z": "d9e1a12b3da58dd5",
+        "name": "function 10",
+        "func": "msg.payload ={\n        \"tab\" :\"登录界面\"\n    }\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 490,
+        "y": 100,
+        "wires": [
+            [
+                "13401d10ae19c3a7"
+            ]
+        ]
+    },
+    {
+        "id": "13401d10ae19c3a7",
+        "type": "ui_ui_control",
+        "z": "d9e1a12b3da58dd5",
+        "name": "",
+        "events": "all",
+        "x": 740,
+        "y": 120,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "e45f08b67ebd89ce",
+        "type": "function",
+        "z": "d9e1a12b3da58dd5",
+        "name": "function 11",
+        "func": "msg.payload ={\n    \"tabs\" :{\n        \"hide\":[\n            \"订单操作界面\",\n            \"订单监控界面\",\n            \"主界面\",\n            \"数据监控界面\"\n        ],\n        \"show\":[\n            \"登录界面\"\n        ]\n    }\n}\nreturn msg;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 490,
+        "y": 160,
+        "wires": [
+            [
+                "13401d10ae19c3a7"
+            ]
+        ]
+    },
+    {
+        "id": "c2897a21905db43f",
+        "type": "function",
+        "z": "d9e1a12b3da58dd5",
+        "name": "function 12",
+        "func": "msg.payload ={\n        \"tab\" :\"订单操作界面\"\n    }\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 490,
+        "y": 220,
+        "wires": [
+            [
+                "6f7c09656e9c5b05"
+            ]
+        ]
+    },
+    {
+        "id": "6f7c09656e9c5b05",
+        "type": "ui_ui_control",
+        "z": "d9e1a12b3da58dd5",
+        "name": "",
+        "events": "all",
+        "x": 740,
+        "y": 240,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "398cae22227f9609",
+        "type": "function",
+        "z": "d9e1a12b3da58dd5",
+        "name": "function 13",
+        "func": "msg.payload ={\n    \"tabs\" :{\n        \"hide\":[\n            \"登录界面\",\n            \"数据监控界面\",\n        ],\n        \"show\":[\n            \"订单操作界面\",\n            \"主界面\",\n            \"订单监控界面\"\n        ]\n    }\n}\nreturn msg;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 490,
+        "y": 280,
+        "wires": [
+            [
+                "6f7c09656e9c5b05"
+            ]
+        ]
+    },
+    {
+        "id": "16b816a5e43ae9c2",
+        "type": "ui_button",
+        "z": "d9e1a12b3da58dd5",
+        "name": "",
+        "group": "47527e9fc026a8d5",
+        "order": 21,
+        "width": 4,
+        "height": 1,
+        "passthru": false,
+        "label": "返回",
+        "tooltip": "",
+        "color": "black",
+        "bgcolor": "#F6F1F1",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 150,
+        "y": 600,
+        "wires": [
+            [
+                "4031b0f688ece1b6",
+                "66f3f85785e977ce"
+            ]
+        ]
+    },
+    {
+        "id": "4031b0f688ece1b6",
+        "type": "function",
+        "z": "d9e1a12b3da58dd5",
+        "name": "function 14",
+        "func": "msg.payload ={\n        \"tab\" :\"主界面\"\n}\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 370,
+        "y": 580,
+        "wires": [
+            [
+                "c14c089f523391b0"
+            ]
+        ]
+    },
+    {
+        "id": "c14c089f523391b0",
+        "type": "ui_ui_control",
+        "z": "d9e1a12b3da58dd5",
+        "name": "",
+        "events": "all",
+        "x": 640,
+        "y": 600,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "66f3f85785e977ce",
+        "type": "function",
+        "z": "d9e1a12b3da58dd5",
+        "name": "function 15",
+        "func": "msg.payload ={\n    \"tabs\" :{\n        \"hide\":[\n            \"订单操作界面\",\n            \"订单监控界面\",\n            \"登录界面\",\n            \"数据监控界面\"\n        ],\n        \"show\":[\n            \"主界面\"\n        ]\n    }\n}\nreturn msg;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 370,
+        "y": 640,
+        "wires": [
+            [
+                "c14c089f523391b0"
+            ]
+        ]
+    },
+    {
+        "id": "8d51145cf858a9b7",
+        "type": "ui_text_input",
+        "z": "d9e1a12b3da58dd5",
+        "name": "",
+        "label": "邮箱",
+        "tooltip": "",
+        "group": "47527e9fc026a8d5",
+        "order": 13,
+        "width": 10,
+        "height": 2,
+        "passthru": true,
+        "mode": "text",
+        "delay": 300,
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 150,
+        "y": 980,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "0640b54e541163fb",
+        "type": "s7 in",
+        "z": "d9e1a12b3da58dd5",
+        "endpoint": "e69f8a5b704de773",
+        "mode": "single",
+        "variable": "当前订单进度",
+        "diff": true,
+        "name": "当前订单进度",
+        "x": 1190,
+        "y": 1060,
+        "wires": [
+            [
+                "56f7d9e6573eaeb4"
+            ]
+        ]
+    },
+    {
+        "id": "56f7d9e6573eaeb4",
+        "type": "ui_gauge",
+        "z": "d9e1a12b3da58dd5",
+        "name": "",
+        "group": "4ac73dbc37baf4ab",
+        "order": 2,
+        "width": 16,
+        "height": 13,
+        "gtype": "wave",
+        "title": "当前订单进度",
+        "label": "%",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "100",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "x": 1540,
+        "y": 1060,
+        "wires": []
+    },
+    {
+        "id": "2a0ab90d71dc4f1c",
+        "type": "ui_gauge",
+        "z": "d9e1a12b3da58dd5",
+        "name": "",
+        "group": "42c5fec8c1d6f527",
+        "order": 1,
+        "width": 5,
+        "height": 3,
+        "gtype": "donut",
+        "title": "左仓料芯",
+        "label": "",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "10",
+        "colors": [
+            "#696eec",
+            "#563ae4",
+            "#2d13f1"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "x": 1520,
+        "y": 700,
+        "wires": []
+    },
+    {
+        "id": "5bf89b3ed01669d2",
+        "type": "ui_gauge",
+        "z": "d9e1a12b3da58dd5",
+        "name": "",
+        "group": "42c5fec8c1d6f527",
+        "order": 3,
+        "width": 5,
+        "height": 3,
+        "gtype": "donut",
+        "title": "右仓料芯",
+        "label": "",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "10",
+        "colors": [
+            "#696eec",
+            "#563ae4",
+            "#2d13f1"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "x": 1520,
+        "y": 740,
+        "wires": []
+    },
+    {
+        "id": "9b36b413c0e2a5ad",
+        "type": "ui_gauge",
+        "z": "d9e1a12b3da58dd5",
+        "name": "",
+        "group": "42c5fec8c1d6f527",
+        "order": 7,
+        "width": 5,
+        "height": 3,
+        "gtype": "donut",
+        "title": "盒盖当前数量",
+        "label": "",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "10",
+        "colors": [
+            "#696eec",
+            "#563ae4",
+            "#2d13f1"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "x": 1540,
+        "y": 780,
+        "wires": []
+    },
+    {
+        "id": "85f4d27ca27a8e74",
+        "type": "ui_gauge",
+        "z": "d9e1a12b3da58dd5",
+        "name": "",
+        "group": "42c5fec8c1d6f527",
+        "order": 5,
+        "width": 5,
+        "height": 3,
+        "gtype": "donut",
+        "title": "合格件当前数量",
+        "label": "",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "10",
+        "colors": [
+            "#696eec",
+            "#563ae4",
+            "#2d13f1"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "x": 1540,
+        "y": 820,
+        "wires": []
+    },
+    {
+        "id": "aaa3d087a665c07a",
+        "type": "ui_chart",
+        "z": "d9e1a12b3da58dd5",
+        "name": "",
+        "group": "794a2ded35d09b79",
+        "order": 8,
+        "width": 7,
+        "height": 4,
+        "label": "二氧化碳浓度",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "x": 1540,
+        "y": 1140,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "2f0d26c5f588a20b",
+        "type": "ui_chart",
+        "z": "d9e1a12b3da58dd5",
+        "name": "",
+        "group": "794a2ded35d09b79",
+        "order": 10,
+        "width": 7,
+        "height": 4,
+        "label": "大气压力",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#142ce6",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "x": 1520,
+        "y": 1180,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "b8d2610d20a6937b",
+        "type": "s7 in",
+        "z": "d9e1a12b3da58dd5",
+        "endpoint": "e69f8a5b704de773",
+        "mode": "single",
+        "variable": "CO2",
+        "diff": true,
+        "name": "二氧化碳浓度",
+        "x": 1190,
+        "y": 1140,
+        "wires": [
+            [
+                "aaa3d087a665c07a"
+            ]
+        ]
+    },
+    {
+        "id": "cb76895a6c2b0e1a",
+        "type": "s7 in",
+        "z": "d9e1a12b3da58dd5",
+        "endpoint": "e69f8a5b704de773",
+        "mode": "single",
+        "variable": "大气压力",
+        "diff": true,
+        "name": "",
+        "x": 1180,
+        "y": 1180,
+        "wires": [
+            [
+                "2f0d26c5f588a20b"
+            ]
+        ]
+    },
+    {
+        "id": "67860111bf6f5fe7",
+        "type": "s7 in",
+        "z": "d9e1a12b3da58dd5",
+        "endpoint": "e69f8a5b704de773",
+        "mode": "single",
+        "variable": "噪声",
+        "diff": true,
+        "name": "噪声值",
+        "x": 1170,
+        "y": 1220,
+        "wires": [
+            [
+                "989314964df9569e"
+            ]
+        ]
+    },
+    {
+        "id": "989314964df9569e",
+        "type": "ui_gauge",
+        "z": "d9e1a12b3da58dd5",
+        "name": "",
+        "group": "42c5fec8c1d6f527",
+        "order": 6,
+        "width": 5,
+        "height": 3,
+        "gtype": "gage",
+        "title": "噪声值",
+        "label": "DB",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "100",
+        "colors": [
+            "#97f297",
+            "#0edd42",
+            "#0b9927"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "x": 1510,
+        "y": 1220,
+        "wires": []
+    },
+    {
+        "id": "61f57000b5c1aa93",
+        "type": "s7 in",
+        "z": "d9e1a12b3da58dd5",
+        "endpoint": "e69f8a5b704de773",
+        "mode": "single",
+        "variable": "订单进度为100",
+        "diff": true,
+        "name": "",
+        "x": 160,
+        "y": 840,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "63b86174b1639080",
+        "type": "ui_toast",
+        "z": "d9e1a12b3da58dd5",
+        "position": "dialog",
+        "displayTime": "3",
+        "highlight": "",
+        "sendall": true,
+        "outputs": 1,
+        "ok": "OK",
+        "cancel": "",
+        "raw": false,
+        "topic": "",
+        "name": "",
+        "x": 590,
+        "y": 860,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "a22eb734bed090f9",
+        "type": "function",
+        "z": "d9e1a12b3da58dd5",
+        "name": "function 16",
+        "func": "var msg ={payload :\"你的订单已装配完成,请凭取件码0197取件!\"}\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 390,
+        "y": 860,
+        "wires": [
+            [
+                "63b86174b1639080"
+            ]
+        ]
+    },
+    {
+        "id": "5b7fbb6d6e526004",
+        "type": "inject",
+        "z": "d9e1a12b3da58dd5",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 170,
+        "y": 880,
+        "wires": [
+            [
+                "a22eb734bed090f9"
+            ]
+        ]
+    }
+]
